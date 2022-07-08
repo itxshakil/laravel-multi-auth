@@ -88,7 +88,7 @@ Route::prefix('admin')->name('admin.')->group(function () {
             ->name('password.update');
     });
 
-    Route::middleware('auth')->group(function () {
+    Route::middleware('auth:admin')->group(function () {
         Route::get('verify-email', [AdminEmailVerificationPromptController::class, '__invoke'])
             ->name('verification.notice');
 
