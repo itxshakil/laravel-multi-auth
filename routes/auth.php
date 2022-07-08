@@ -14,7 +14,6 @@ use App\Http\Controllers\Auth\Admin\EmailVerificationNotificationController as A
 use App\Http\Controllers\Auth\Admin\EmailVerificationPromptController as AdminEmailVerificationPromptController;
 use App\Http\Controllers\Auth\Admin\NewPasswordController as AdminNewPasswordController;
 use App\Http\Controllers\Auth\Admin\PasswordResetLinkController as AdminPasswordResetLinkController;
-use App\Http\Controllers\Auth\Admin\RegisteredUserController as AdminRegisteredUserController;
 use App\Http\Controllers\Auth\Admin\VerifyEmailController as AdminVerifyEmailController;
 use Illuminate\Support\Facades\Route;
 
@@ -65,11 +64,6 @@ Route::middleware('auth')->group(function () {
 
 Route::prefix('admin')->name('admin.')->group(function () {
     Route::middleware('guest:admin')->group(function () {
-        Route::get('register', [AdminRegisteredUserController::class, 'create'])
-            ->name('register');
-
-        Route::post('register', [AdminRegisteredUserController::class, 'store']);
-
         Route::get('login', [AdminAuthenticatedSessionController::class, 'create'])
             ->name('login');
 
