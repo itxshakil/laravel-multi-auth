@@ -18,11 +18,11 @@ Go to the project directory
 cd laravel-multi-auth
 ```
 
-Install dependencies
+Install dependencies & build assets
 
 ```bash
 composer install
-npm install
+npm install && npm run dev
 ```
 
 Migrate and seed database
