@@ -34,7 +34,7 @@ php artisan migrate
 Start the server
 
 ```bash
-php artsan serve
+php artisan serve
 ```
 
 
