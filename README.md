@@ -1,3 +1,8 @@
+📌 **Deprecation Notice**
+
+This repository is deprecated and no more work will be done on this. You can continue to use this and it should work as-is. **You are recommeded to use latest repo for Laravel 10.**
+
+👉 Updated Template: https://github.com/itxshakil/multi-auth-for-laravel
 
 # Laravel Multi Auth
 
